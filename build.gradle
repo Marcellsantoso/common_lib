@@ -1,0 +1,48 @@
+apply plugin: 'android-library'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':adt-bundle-mac-x86_64-20140702:sdk:extras:google:google_play_services:libproject:google-play-services_lib')
+    compile project(':Android:Git:ActionBar4RoboGuice:com.verano.actionbar4guice')
+    compile project(':Android:Git:android-betterpickers:library')
+    compile project(':Android:Git:MaterialDesignLibrary:MaterialDesign')
+    compile project(':Android:Git:datetimepicker:datetimepicker-library')
+    compile project(':Android:Git:Calligraphy:calligraphy:src:main')
+    compile project(':Android:Git:MaterialWidget:library:src:main')
+    compile project(':Android:Git:facebook:facebook-android-sdk:facebook')
+    compile project(':adt-bundle-mac-x86_64-20140702:sdk:extras:android:support:v7:appcompat')
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="iapps">
+        <attr name="loadingMessageColor" format="color" />
+        <attr name="loadingErrorTitleColor" format="color" />
+        <attr name="loadingErrorMessageColor" format="color" />
+        <attr name="loadingMessage" format="string" />
+        <attr name="loadingErrorNetworkTitle" format="string" />
+        <attr name="loadingErrorNoInternetMessage" format="string" />
+        <attr name="loadingErrorUnknownResponseMessage" format="string" />
+        <attr name="loadingRetryButtonText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="buttonIcon">
+        <attr name="iconLeftSrc" format="integer" />
+        <attr name="iconRightSrc" format="integer" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <!-- Rounded Image View -->
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- FloatingEditText Attribute -->
+    <declare-styleable name="FloatingEditText">
+        <attr name="floating_edit_text_hint_scale" format="float" />
+        <attr name="floating_edit_text_color" format="color" />
+        <attr name="floating_edit_text_highlighted_color" format="color" />
+        <attr name="floating_edit_text_error_color" format="color" />
+        <attr name="floating_edit_text_underline_height" format="dimension" />
+        <attr name="floating_edit_text_underline_highlighted_height" format="dimension" />
+    </declare-styleable>
+
+</resources>

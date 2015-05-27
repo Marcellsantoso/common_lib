@@ -1,0 +1,170 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/Black</item>
+        <item name="colorPrimaryDark">@color/Black</item>
+        <item name="colorAccent">@color/Black</item>
+    </style>
+
+    <style name="text" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="fontPath">@string/font_normal</item>
+    </style>
+
+    <style name="textBold" parent="text">
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="textLight" parent="text">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="textBoldLight" parent="textBold">
+        <item name="android:textColor">@color/White</item>
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text Large -->
+    <style name="textLarge" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="textLargeLight" parent="textLarge">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="textLargeLightBold" parent="textLargeLight">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textLargeBold" parent="textLargeLightBold">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+
+    <!-- Text XLarge -->
+    <style name="textXLarge" parent="text">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="textXLargeLight" parent="textXLarge">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="textXLargeBold" parent="textXLarge">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textXLargeBoldLight" parent="textXLargeBold">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- Text Small -->
+    <style name="textSmall" parent="text">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="textSmallLight" parent="textSmall">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- ANIMATION -->
+    <style name="dialog_animation_fade">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+
+    <!-- ImageButton -->
+    <style name="imgBtn" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/bg_selectable</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_width">@dimen/min_size</item>
+        <item name="android:layout_height">@dimen/min_size</item>
+    </style>
+
+    <style name="btn" parent="android:Widget.Holo.Light.Button">
+        <item name="android:minHeight">@dimen/min_size_small</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="btn_blue_fb" parent="btn">
+        <item name="android:background">@drawable/btn_blue_xml</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="btn_white" parent="btn">
+        <item name="android:background">@drawable/btn_white_xml</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="btn_transparent" parent="btn">
+        <item name="android:background">@drawable/bg_selectable</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <!-- ListView -->
+    <style name="lv">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@drawable/bg_selectable</item>
+    </style>
+
+    <style name="edt_light">
+        <item name="floating_edit_text_color">@color/Gray</item>
+        <item name="floating_edit_text_highlighted_color">@color/LightGrey</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:tint">@color/Gray</item>
+        <item name="android:textCursorDrawable" tools:targetApi="12">@null</item>
+        <item name="android:textColorHint">@color/Gray</item>
+    </style>
+
+    <!-- Radio Button -->
+    <style name="radio_white" parent="android:Theme.Holo.Light">
+        <item name="android:listChoiceIndicatorSingle">@drawable/radio_white</item>
+    </style>
+
+    <!-- Better Picker -->
+    <style name="dialog_button">
+        <item name="android:textSize">@dimen/dialog_button_font_size</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="medium_bold">
+        <item name="android:textSize">@dimen/medium_date_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-light</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps" tools:targetApi="14">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-condensed</item>
+    </style>
+
+    <style name="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:textAllCaps" tools:targetApi="14">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-light</item>
+    </style>
+
+    <style name="dialpad_text" parent="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size_ampm</item>
+    </style>
+
+</resources>

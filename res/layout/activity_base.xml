@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.iapps.libs.views.ImageViewLoader
+        android:id="@+id/imgbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- The main content view -->
+
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/lvDrawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:background="@drawable/overlay"
+            android:choiceMode="singleChoice"
+            android:divider="@color/LightGrey"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <View
+        android:id="@+id/toolbarBg"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/actionbar" />
+
+</RelativeLayout>
